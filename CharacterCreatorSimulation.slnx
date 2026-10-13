@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Characters/" />
+  <Folder Name="/Controllers/" />
+  <Folder Name="/Decorators/" />
+  <Folder Name="/Factories/" />
+  <Folder Name="/Inventory/" />
+  <Folder Name="/World/" />
+  <Project Path="CharacterCreatorSimulation/CharacterCreatorSimulation.csproj" />
+</Solution>
