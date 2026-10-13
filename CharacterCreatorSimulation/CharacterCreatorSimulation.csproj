@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Characters\" />
     <Folder Include="Controllers\" />
     <Folder Include="Decorators\" />
     <Folder Include="Factories\" />
