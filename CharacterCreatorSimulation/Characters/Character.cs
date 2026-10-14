@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 
 namespace CharacterCreatorSimulation.Characters
 {
@@ -36,7 +35,7 @@ namespace CharacterCreatorSimulation.Characters
 
         public void PrintDetails()
         {
-            Console.WriteLine("\n--- Character Details ---");
+            Console.WriteLine(" Character Details");
             Console.WriteLine("Name: " + Name);
             Console.WriteLine("Health: " + Health);
             Console.WriteLine("Defense: " + Defense);

@@ -1,4 +1,4 @@
-﻿
+﻿using System;
 namespace CharacterCreatorSimulation.Inventory
 {
     public class InventoryFacade

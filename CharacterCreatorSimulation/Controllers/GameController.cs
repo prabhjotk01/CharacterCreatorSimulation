@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using CharacterCreatorSimulation.Characters;
 using CharacterCreatorSimulation.Factories;
 using CharacterCreatorSimulation.Decorators;

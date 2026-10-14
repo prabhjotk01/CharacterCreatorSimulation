@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using CharacterCreatorSimulation.Characters;
 
@@ -27,8 +26,7 @@ namespace CharacterCreatorSimulation.World
                 {
                     instance = new GameWorld();
                 }
-
-                return instance;
+                    return instance;
             }
         }
 

@@ -1,4 +1,4 @@
-﻿
+﻿using System;
 using CharacterCreatorSimulation.Characters;
 
 namespace CharacterCreatorSimulation.Factories

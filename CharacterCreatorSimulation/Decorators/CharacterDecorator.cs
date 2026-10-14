@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using CharacterCreatorSimulation.Characters;
 
 namespace CharacterCreatorSimulation.Decorators
@@ -9,9 +8,16 @@ namespace CharacterCreatorSimulation.Decorators
         protected Character character;
 
         public CharacterDecorator(Character character)
-            : base(character.Name)
+    : base(character.Name)
         {
             this.character = character;
+
+            Health = character.Health;
+            Defense = character.Defense;
+            Speed = character.Speed;
+            Strength = character.Strength;
+            Intellect = character.Intellect;
+            Agility = character.Agility;
         }
 
         public override void Act()

@@ -1,4 +1,4 @@
-﻿
+﻿using System;
 using CharacterCreatorSimulation.Controllers;
 
 GameController controller = new GameController();

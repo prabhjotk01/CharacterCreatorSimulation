@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using CharacterCreatorSimulation.Characters;
 
 namespace CharacterCreatorSimulation.Decorators
