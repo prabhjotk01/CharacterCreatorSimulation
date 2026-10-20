@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using CharacterCreatorSimulation.Characters;
 
 namespace CharacterCreatorSimulation.Factories
@@ -27,6 +28,16 @@ namespace CharacterCreatorSimulation.Factories
             {
                 return null;
             }
+        }
+
+        public Character CreateCharacter(string type, string name, string color)
+        {
+            if (type == "Splorg")
+            {
+                return new SplorgAdapter(name, color);
+            }
+
+            return CreateCharacter(type, name);
         }
     }
 }
