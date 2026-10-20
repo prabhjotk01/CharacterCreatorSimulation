@@ -19,6 +19,10 @@ namespace CharacterCreatorSimulation.Factories
             {
                 return new Dwarf(name);
             }
+            else if (type == "Splorg")
+            {
+                return new SplorgAdapter(name, "Red");
+            }
             else
             {
                 return null;
