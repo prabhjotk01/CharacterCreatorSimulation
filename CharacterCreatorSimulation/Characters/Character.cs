@@ -32,7 +32,7 @@ namespace CharacterCreatorSimulation.Characters
             Console.WriteLine("Hello, I am " + Name + ".");
         }
 
-        public void PrintDetails()
+        public virtual void PrintDetails()
         {
             Console.WriteLine(" Character Details");
             Console.WriteLine("Name: " + Name);
