@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace CharacterCreatorSimulation.Characters
 {
     public class Character

@@ -8,7 +8,7 @@ namespace CharacterCreatorSimulation.Decorators
         protected Character character;
 
         public CharacterDecorator(Character character)
-    : base(character.Name)
+            : base(character.Name)
         {
             this.character = character;
 

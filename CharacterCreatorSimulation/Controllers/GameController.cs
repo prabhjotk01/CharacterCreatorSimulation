@@ -126,7 +126,7 @@ namespace CharacterCreatorSimulation.Controllers
 
         private void ManageInventory()
         {
-            Console.WriteLine("\n1. Add Item");
+            Console.WriteLine("1. Add Item");
             Console.WriteLine("2. Remove Item");
             Console.WriteLine("3. Find Item");
             Console.WriteLine("4. Show Inventory");
