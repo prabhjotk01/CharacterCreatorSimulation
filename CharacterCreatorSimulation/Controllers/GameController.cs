@@ -59,6 +59,7 @@ namespace CharacterCreatorSimulation.Controllers
             }
         }
 
+
         private void CreateCharacter()
         {
             Console.Write("Enter character name: ");
@@ -67,6 +68,7 @@ namespace CharacterCreatorSimulation.Controllers
             Console.WriteLine("1. Human");
             Console.WriteLine("2. Elf");
             Console.WriteLine("3. Dwarf");
+            Console.WriteLine("4. Splorg");
             Console.Write("Choose character type: ");
 
             string typeChoice = Console.ReadLine();
@@ -78,6 +80,8 @@ namespace CharacterCreatorSimulation.Controllers
                 type = "Elf";
             else if (typeChoice == "3")
                 type = "Dwarf";
+            else if (typeChoice == "4")
+                type = "Splorg";
             else
             {
                 Console.WriteLine("Invalid character type.");
@@ -93,6 +97,7 @@ namespace CharacterCreatorSimulation.Controllers
                 character.PrintDetails();
             }
         }
+
 
         private void AddSpecialization()
         {
