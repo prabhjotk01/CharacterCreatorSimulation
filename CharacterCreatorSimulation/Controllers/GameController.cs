@@ -59,6 +59,7 @@ namespace CharacterCreatorSimulation.Controllers
             }
         }
 
+
         private void CreateCharacter()
         {
             Console.Write("Enter character name: ");
@@ -67,6 +68,7 @@ namespace CharacterCreatorSimulation.Controllers
             Console.WriteLine("1. Human");
             Console.WriteLine("2. Elf");
             Console.WriteLine("3. Dwarf");
+            Console.WriteLine("4. Splorg");
             Console.Write("Choose character type: ");
 
             string typeChoice = Console.ReadLine();
@@ -78,13 +80,43 @@ namespace CharacterCreatorSimulation.Controllers
                 type = "Elf";
             else if (typeChoice == "3")
                 type = "Dwarf";
+            else if (typeChoice == "4")
+                type = "Splorg";
             else
             {
                 Console.WriteLine("Invalid character type.");
                 return;
             }
 
-            character = factory.CreateCharacter(type, name);
+            if (type == "Splorg")
+            {
+                Console.WriteLine("Choose Splorg color:");
+                Console.WriteLine("1. Red");
+                Console.WriteLine("2. Green");
+                Console.WriteLine("3. Blue");
+                Console.Write("Enter color choice: ");
+
+                string colorChoice = Console.ReadLine();
+                string color = "";
+
+                if (colorChoice == "1")
+                    color = "Red";
+                else if (colorChoice == "2")
+                    color = "Green";
+                else if (colorChoice == "3")
+                    color = "Blue";
+                else
+                {
+                    Console.WriteLine("Invalid color choice.");
+                    return;
+                }
+
+                character = factory.CreateCharacter(type, name, color);
+            }
+            else
+            {
+                character = factory.CreateCharacter(type, name);
+            }
 
             if (character != null)
             {
@@ -93,6 +125,7 @@ namespace CharacterCreatorSimulation.Controllers
                 character.PrintDetails();
             }
         }
+
 
         private void AddSpecialization()
         {
@@ -126,7 +159,7 @@ namespace CharacterCreatorSimulation.Controllers
 
         private void ManageInventory()
         {
-            Console.WriteLine("\n1. Add Item");
+            Console.WriteLine("1. Add Item");
             Console.WriteLine("2. Remove Item");
             Console.WriteLine("3. Find Item");
             Console.WriteLine("4. Show Inventory");

@@ -32,7 +32,7 @@ namespace CharacterCreatorSimulation.Inventory
 
         public void PrintItems()
         {
-            Console.WriteLine("\n--- Inventory ---");
+            Console.WriteLine("Inventory");
 
             if (items.Count == 0)
             {

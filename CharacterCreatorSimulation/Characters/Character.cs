@@ -33,7 +33,7 @@ namespace CharacterCreatorSimulation.Characters
             Console.WriteLine("Hello, I am " + Name + ".");
         }
 
-        public void PrintDetails()
+        public virtual void PrintDetails()
         {
             Console.WriteLine(" Character Details");
             Console.WriteLine("Name: " + Name);
@@ -43,6 +43,10 @@ namespace CharacterCreatorSimulation.Characters
             Console.WriteLine("Strength: " + Strength);
             Console.WriteLine("Intellect: " + Intellect);
             Console.WriteLine("Agility: " + Agility);
+        }
+
+        public virtual void PrintAdditionalDetails()
+        {
         }
     }
 }
