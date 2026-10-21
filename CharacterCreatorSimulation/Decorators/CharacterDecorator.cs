@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using CharacterCreatorSimulation.Characters;
 
 namespace CharacterCreatorSimulation.Decorators
@@ -30,9 +31,23 @@ namespace CharacterCreatorSimulation.Decorators
             character.Speak();
         }
 
-        public new void PrintDetails()
+        public override void PrintDetails()
         {
-            character.PrintDetails();
+            Console.WriteLine(" Character Details");
+            Console.WriteLine("Name: " + Name);
+            Console.WriteLine("Health: " + Health);
+            Console.WriteLine("Defense: " + Defense);
+            Console.WriteLine("Speed: " + Speed);
+            Console.WriteLine("Strength: " + Strength);
+            Console.WriteLine("Intellect: " + Intellect);
+            Console.WriteLine("Agility: " + Agility);
+
+            character.PrintAdditionalDetails();
+        }
+
+        public override void PrintAdditionalDetails()
+        {
+            character.PrintAdditionalDetails();
         }
     }
 }

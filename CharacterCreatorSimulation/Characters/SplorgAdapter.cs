@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using Artifact_Legacy_Code;
 
 namespace CharacterCreatorSimulation.Characters
@@ -28,6 +29,22 @@ namespace CharacterCreatorSimulation.Characters
         public override void Speak()
         {
             Console.WriteLine(Name + " says: " + splorg.Communicate());
+        }
+
+        public override void PrintDetails()
+        {
+            base.PrintDetails();
+            PrintAdditionalDetails();
+        }
+
+        public override void PrintAdditionalDetails()
+        {
+            Console.WriteLine("Splorg Color: " + splorg.Color);
+            Console.WriteLine("Bubble Durability: " + splorg.BubbleDurability);
+            Console.WriteLine("Smarts: " + splorg.Smarts);
+            Console.WriteLine("Luck: " + splorg.Luck);
+
+            splorg.printDescription();
         }
     }
 }

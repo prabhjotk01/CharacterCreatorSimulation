@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace CharacterCreatorSimulation.Characters
 {
     public class Character
@@ -42,6 +43,10 @@ namespace CharacterCreatorSimulation.Characters
             Console.WriteLine("Strength: " + Strength);
             Console.WriteLine("Intellect: " + Intellect);
             Console.WriteLine("Agility: " + Agility);
+        }
+
+        public virtual void PrintAdditionalDetails()
+        {
         }
     }
 }
